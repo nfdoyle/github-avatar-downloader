@@ -20,4 +20,11 @@ function getRepoContributors(repoOwner, repoName, cb) {
 getRepoContributors("jquery", "jquery", function(err, result) {
   console.log("Errors:", err);
   console.log("Result:", result);
+  var data = JSON.parse(result);
+  console.log(data);
+  
+  data.forEach(function(entry){
+    console.log(entry.login);
+    var user = entry.login;
+  })
 });
