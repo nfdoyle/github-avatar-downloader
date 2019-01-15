@@ -1,8 +1,8 @@
 {
   "name": "github-avatar-downloader",
   "version": "1.0.0",
-  "description": "## Problem Statement",
-  "main": "index.js",
+  "description": "## Small app to download github contributor avatars",
+  "main": "download_avatars.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
