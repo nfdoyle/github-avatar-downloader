@@ -1,8 +1,11 @@
 var secret = require('./secrets');
 var request = require('request');
 var fs = require('fs');
-var myArgs = process.argv.slice(2);
 
+var myArgs = process.argv.slice(2);
+if (myArgs.length === 0) {
+  return console.error("You must enter the arguments... :(");  
+}
 
 console.log('Welcome to the GitHub Avatar Downloader!');
 
